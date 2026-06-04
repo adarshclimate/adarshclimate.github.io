@@ -140,6 +140,11 @@ h1 {
   color: var(--text);
   text-decoration: none;
   font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.contact-list a:hover {
+  color: var(--accent);
 }
 
 .content-panel {
@@ -171,18 +176,34 @@ h1 {
   border-radius: 24px;
   padding: 26px;
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.card:hover,
+.skill-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 24px 60px rgba(37, 99, 235, 0.12);
+  transform: translateY(-4px);
 }
 
 .card h3,
 .skill-card h3 {
   margin: 0 0 10px;
   font-size: 1.05rem;
+  transition: color 0.2s ease;
+}
+
+.card:hover h3,
+.skill-card:hover h3 {
+  color: var(--accent);
 }
 
 .meta {
   margin: 0 0 16px;
   color: var(--accent);
   font-weight: 600;
+  font-size: 0.95rem;
 }
 
 .card p,
@@ -190,6 +211,8 @@ h1 {
 .skill-card p,
 .card ul {
   color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
 }
 
 .card ul,
@@ -199,8 +222,8 @@ h1 {
 }
 
 .card li {
-  margin-bottom: 10px;
-  line-height: 1.75;
+  margin-bottom: 8px;
+  line-height: 1.65;
 }
 
 .grid,
