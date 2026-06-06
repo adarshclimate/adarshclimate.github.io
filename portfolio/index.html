@@ -648,51 +648,180 @@ footer {
   </ul>
 </nav>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Adarsh Raut</title>
 
-    <style>
-    #hero{
-        min-height:100vh;
-        width:100%;
-        background-image:url("photo1.png");
-        background-size:cover;
-        background-position:center;
-        background-repeat:no-repeat;
-        display:flex;
-        align-items:center;
-        position:relative;
-    }
+<section id="hero">
 
-    #hero::before{
-        content:"";
-        position:absolute;
-        inset:0;
-        background:linear-gradient(
-            to right,
-            rgba(0,0,0,0.75),
-            rgba(0,0,0,0.45),
-            rgba(0,0,0,0.15)
-        );
-    }
+    <div class="hero-inner">
 
-    .hero-inner{
-        position:relative;
-        z-index:2;
-        max-width:700px;
-        padding-left:8%;
-    }
+        <div class="hero-content">
 
-    .hero,
-    .hero h1,
-    .hero p,
-    .hero a,
-    .hero-subtitle{
-        color:white;
-    }
-    </style>
-</head>
+            <div class="hero-tag">
+                ATMOSPHERIC & CLIMATE SCIENTIST
+            </div>
+
+            <h1>
+                Adarsh<br>
+                <em>Dattarao Raut</em>
+            </h1>
+
+            <div class="hero-subtitle">
+                Project Engineer · C-DAC Pune |
+                M.Tech Atmospheric Sciences · IITM–SPPU
+            </div>
+
+            <p class="hero-desc">
+                Working at the intersection of numerical weather prediction,
+                high-resolution climate modeling, and HPC-based atmospheric
+                simulations. Research focus on monsoon dynamics, extreme rainfall
+                diagnostics, urban climate risk assessment, and Arctic–Indian
+                climate teleconnections.
+            </p>
+
+            <div class="hero-btns">
+                <a href="#research" class="btn-primary">
+                    View Research
+                </a>
+
+                <a href="#contact" class="btn-outline">
+                    Get in Touch
+                </a>
+            </div>
+
+            <div class="hero-links">
+                <a href="https://orcid.org/0009-0001-6554-4709" target="_blank">
+                    ● ORCID
+                </a>
+
+                <a href="https://github.com/adarshclimate" target="_blank">
+                    ● GitHub
+                </a>
+
+                <a href="mailto:adarshraut94@gmail.com">
+                    ● Email
+                </a>
+
+                <a href="https://www.linkedin.com/in/mr-adarsh-raut-b6766926b" target="_blank">
+                    ● LinkedIn
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+  
+
+/* HERO SECTION */
+
+#hero{
+    height:100vh;
+    width:100%;
+    background:url("photo1.png") center center/cover no-repeat;
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+
+#hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        90deg,
+        rgba(0,0,0,0.75) 0%,
+        rgba(0,0,0,0.45) 40%,
+        rgba(0,0,0,0.10) 100%
+    );
+}
+
+.hero-inner{
+    position:relative;
+    z-index:2;
+    max-width:1200px;
+    margin:auto;
+    width:100%;
+    padding:0 8%;
+}
+
+.hero-content{
+    max-width:650px;
+}
+
+.hero-tag{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,0.3);
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    color:#7fffd4;
+    font-size:0.8rem;
+    letter-spacing:1px;
+    margin-bottom:20px;
+}
+
+.hero-content h1{
+    font-family:'DM Serif Display', serif;
+    font-size:5rem;
+    line-height:1;
+    color:white;
+    margin-bottom:10px;
+}
+
+.hero-content h1 em{
+    color:#4fd1c5;
+    font-style:italic;
+}
+
+.hero-subtitle{
+    color:#e5e5e5;
+    font-size:1.15rem;
+    margin-bottom:25px;
+}
+
+.hero-desc{
+    color:white;
+    font-size:1rem;
+    line-height:1.9;
+    margin-bottom:35px;
+}
+
+.hero-btns{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.hero-btns a{
+    text-decoration:none;
+}
+
+.btn-primary{
+    background:#0ea5a4;
+    color:white;
+    padding:14px 28px;
+    border-radius:8px;
+}
+
+.btn-outline{
+    border:2px solid white;
+    color:white;
+    padding:14px 28px;
+    border-radius:8px;
+}
+
+.hero-links{
+    display:flex;
+    gap:25px;
+}
+
+.hero-links a{
+    color:white;
+    text-decoration:none;
+    font-size:0.9rem;
+}
+  
 <!-- ABOUT -->
 <section id="about">
   <div class="about-inner">
