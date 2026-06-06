@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adarsh Dattarao Raut | Climate & Atmospheric Scientist</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+  --surface2: #f0ede6;
+  --accent: #1a4a6b;
+  --accent2: #2d7a5e;
+  --gold: #b8860b;
+  --text: #1c1c1c;
+  --muted: #6b6b6b;
+  --border: #ddd9d0;
+  --tag-bg: #e8f4f0;
+  --tag-text: #1a5c45;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: rgba(247,245,240,0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.nav-logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.1rem;
+  color: var(--accent);
+  letter-spacing: 0.3px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--accent); }
+
+/* SECTIONS */
+section { padding: 80px 40px; max-width: 980px; margin: 0 auto; }
+
+/* HERO */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  max-width: 100%;
+  background: linear-gradient(135deg, #eef5f0 0%, #f7f5f0 50%, #eef0f7 100%);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.hero-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 60px;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-tag {
+  display: inline-block;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #b8ddd0;
+}
+
+.hero h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 3.2rem;
+  line-height: 1.15;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: var(--muted);
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.hero-desc {
+  font-size: 0.95rem;
+  color: var(--text);
+  max-width: 500px;
+  margin-bottom: 32px;
+  line-height: 1.8;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  padding: 11px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover { background: #153d5a; }
+
+.btn-outline {
+  border: 1.5px solid var(--accent);
+  color: var(--accent);
+  padding: 10px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover { background: var(--accent); color: #fff; }
+
+.hero-avatar {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a4a6b 0%, #2d7a5e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 4rem;
+  color: rgba(255,255,255,0.9);
+  flex-shrink: 0;
+  border: 6px solid #fff;
+  box-shadow: 0 8px 32px rgba(26,74,107,0.15);
+}
+
+.hero-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.hero-links a {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.hero-links a:hover { color: var(--accent); border-color: var(--accent); }
+
+/* SECTION HEADER */
+.sec-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent2);
+  margin-bottom: 8px;
+}
+
+.sec-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  color: var(--text);
+  margin-bottom: 40px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--border);
+}
+
+/* ABOUT */
+#about { background: var(--surface); max-width: 100%; padding: 80px 10%; }
+.about-inner { max-width: 980px; margin: 0 auto; }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-text p { margin-bottom: 16px; font-size: 0.95rem; color: #333; }
+
+.about-info { display: flex; flex-direction: column; gap: 14px; }
+
+.info-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+
+.info-card .label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.info-card .value {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.info-card .sub {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* RESEARCH */
+#research { background: var(--bg); }
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.research-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 24px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-top: 3px solid var(--accent);
+}
+
+.research-card:nth-child(2) { border-top-color: var(--accent2); }
+.research-card:nth-child(3) { border-top-color: var(--gold); }
+
+.research-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+
+.research-icon {
+  font-size: 1.8rem;
+  margin-bottom: 14px;
+}
+
+.research-card h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.research-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.7; }
+
+/* PUBLICATIONS */
+#publications { background: var(--surface); max-width: 100%; padding: 80px 10%; }
+.pub-inner { max-width: 980px; margin: 0 auto; }
+
+.pub-item {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px 28px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.pub-year {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 500;
+  background: #e8f0f7;
+  padding: 4px 10px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.pub-content h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.pub-content .authors {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.pub-content .journal {
+  font-size: 0.8rem;
+  color: var(--accent2);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.conf-item {
+  border-left: 3px solid var(--gold);
+  background: var(--bg);
+  padding: 18px 22px;
+  margin-bottom: 12px;
+  border-radius: 0 8px 8px 0;
+}
+
+.conf-item h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 4px; }
+.conf-item p  { font-size: 0.82rem; color: var(--muted); }
+
+/* PROJECTS */
+#projects { background: var(--bg); }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  transition: transform 0.2s;
+}
+
+.project-card:hover { transform: translateY(-2px); }
+
+.project-card .proj-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.proj-org {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.proj-year {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.project-card h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.project-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.7; }
+
+.proj-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+
+.tag {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid #b8ddd0;
+}
+
+/* SKILLS */
+#skills { background: var(--surface); max-width: 100%; padding: 80px 10%; }
+.skills-inner { max-width: 980px; margin: 0 auto; }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skill-group {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.skill-group h3 {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.skill-pill {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  color: var(--text);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* EXPERIENCE TIMELINE */
+#experience { background: var(--bg); }
+
+.timeline { position: relative; padding-left: 28px; }
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px; top: 6px; bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -25px; top: 7px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.timeline-item .t-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4px;
+}
+
+.timeline-item h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.t-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--muted);
+  background: var(--surface2);
+  padding: 2px 10px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.t-org {
+  font-size: 0.85rem;
+  color: var(--accent2);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.timeline-item p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* CONTACT */
+#contact { background: var(--accent); max-width: 100%; padding: 80px 10%; }
+
+.contact-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+#contact .sec-label { color: rgba(255,255,255,0.6); }
+#contact .sec-title { color: #fff; border-color: rgba(255,255,255,0.2); }
+
+.contact-desc { color: rgba(255,255,255,0.75); font-size: 0.95rem; margin-bottom: 28px; }
+
+.contact-links { display: flex; flex-direction: column; gap: 14px; }
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.2s;
+}
+
+.contact-link:hover { color: #fff; }
+
+.contact-link .c-icon {
+  width: 36px; height: 36px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.cv-box {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 14px;
+  padding: 32px;
+  text-align: center;
+}
+
+.cv-box h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.cv-box p { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-bottom: 22px; }
+
+.btn-white {
+  background: #fff;
+  color: var(--accent);
+  padding: 11px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  transition: background 0.2s;
+}
+
+.btn-white:hover { background: #f0f0f0; }
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: rgba(255,255,255,0.4);
+  text-align: center;
+  padding: 24px;
+  font-size: 0.78rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav { padding: 0 20px; }
+  .nav-links { gap: 16px; }
+  .nav-links a { font-size: 0.72rem; }
+  section { padding: 60px 20px; }
+  #hero, #about, #publications, #skills, #contact { padding-left: 20px; padding-right: 20px; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-avatar { width: 140px; height: 140px; font-size: 2.5rem; margin: 0 auto; }
+  .hero h1 { font-size: 2.2rem; }
+  .about-grid, .research-grid, .projects-grid, .skills-grid, .contact-inner { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Adarsh D. Raut</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://adarshclimate.github.io" target="_blank" style="color:var(--accent); border:1px solid var(--accent); padding:4px 14px; border-radius:4px;">CV</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero">
+      <div class="hero-tag">Atmospheric & Climate Scientist</div>
+      <h1>Adarsh<br><em>Dattarao Raut</em></h1>
+      <div class="hero-subtitle">Project Engineer · C-DAC Pune &nbsp;|&nbsp; M.Tech Atmospheric Sciences · IITM–SPPU</div>
+      <p class="hero-desc">
+        Working at the intersection of numerical weather prediction, high-resolution climate modeling, 
+        and HPC-based atmospheric simulations. Research focus on monsoon dynamics, extreme rainfall 
+        diagnostics, and Arctic–Indian climate teleconnections.
+      </p>
+      <div class="hero-btns">
+        <a href="#research" class="btn-primary">View Research</a>
+        <a href="#contact" class="btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-links">
+        <a href="https://orcid.org/0009-0001-6554-4709" target="_blank">&#9679; ORCID</a>
+        <a href="https://github.com/adarshclimate" target="_blank">&#9679; GitHub</a>
+        <a href="mailto:adarshraut94@gmail.com">&#9679; Email</a>
+      </div>
+    </div>
+    <div class="hero-avatar">AR</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-inner">
+    <div class="sec-label">About</div>
+    <div class="sec-title">Who I Am</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I am an atmospheric and climate scientist currently working as a Project Engineer at 
+          <strong>Centre for Development of Advanced Computing (C-DAC), Pune</strong>, where I focus on 
+          operational WRF-based numerical weather prediction and high-resolution climate analysis.
+        </p>
+        <p>
+          My academic journey includes an <strong>M.Tech in Atmospheric Sciences</strong> jointly from 
+          Savitribai Phule Pune University (SPPU) and the Indian Institute of Tropical Meteorology (IITM), 
+          where my thesis investigated the <em>influence of the Arctic Oscillation on Indian Summer Monsoon Rainfall</em>.
+        </p>
+        <p>
+          I have hands-on experience with ERA5 and IMD datasets, extreme rainfall diagnostics, urban climate 
+          risk assessment, and large-scale HPC computing on clusters like Param Smriti. 
+          I am passionate about bridging computational science with real-world climate challenges.
+        </p>
+        <p>
+          Beyond science, I am a government scholarship awardee, marathon runner, and musician — 
+          bringing discipline and creativity to everything I pursue.
+        </p>
+      </div>
+      <div class="about-info">
+        <div class="info-card">
+          <div class="label">Current Position</div>
+          <div class="value">Project Engineer</div>
+          <div class="sub">C-DAC Pune · Nov 2025–Present</div>
+        </div>
+        <div class="info-card">
+          <div class="label">Education</div>
+          <div class="value">M.Tech Atmospheric Sciences</div>
+          <div class="sub">SPPU + IITM Pune · 2024</div>
+        </div>
+        <div class="info-card">
+          <div class="label">ORCID</div>
+          <div class="value" style="font-family:'JetBrains Mono',monospace; font-size:0.82rem;">0009-0001-6554-4709</div>
+        </div>
+        <div class="info-card">
+          <div class="label">Languages</div>
+          <div class="value">English · Hindi · Marathi</div>
+        </div>
+        <div class="info-card">
+          <div class="label">Location</div>
+          <div class="value">Pune, Maharashtra, India</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="sec-label">Research</div>
+  <div class="sec-title">Research Areas</div>
+  <div class="research-grid">
+    <div class="research-card">
+      <div class="research-icon">🌧️</div>
+      <h3>Monsoon Dynamics & Teleconnections</h3>
+      <p>Investigating drivers of Indian Summer Monsoon Rainfall including Arctic Oscillation influence, MMCSv2 seasonal prediction model analysis, and large-scale climate pattern connections.</p>
+    </div>
+    <div class="research-card">
+      <div class="research-icon">🌀</div>
+      <h3>Numerical Weather Prediction</h3>
+      <p>Operational WRF-based NWP modeling, heat wave visualization within the boundary layer, extreme rainfall diagnostics and urban climate risk assessment using ERA5 and IMD datasets.</p>
+    </div>
+    <div class="research-card">
+      <div class="research-icon">🌊</div>
+      <h3>Computational Fluid Dynamics</h3>
+      <p>CFD-based hydrodynamic investigations of bio-inspired flapping foil propulsion, oscillating foil dynamics, lift and thrust generation, and experimental validation of marine propulsion systems.</p>
+    </div>
+    <div class="research-card">
+      <div class="research-icon">💻</div>
+      <h3>High Performance Computing</h3>
+      <p>Large climate dataset processing using Dask parallel computing, Parallel NetCDF, HPC cluster workflows on Param Smriti, and multiprocessing pipelines for atmospheric simulations.</p>
+    </div>
+    <div class="research-card">
+      <div class="research-icon">🏙️</div>
+      <h3>Urban Climate & Extremes</h3>
+      <p>Urban climate risk assessment integrating meteorological and socio-economic indicators, extreme rainfall event diagnostics, and boundary layer flow analysis over urban environments.</p>
+    </div>
+    <div class="research-card">
+      <div class="research-icon">🛰️</div>
+      <h3>Remote Sensing & GIS</h3>
+      <p>Application of GIS and remote sensing techniques in atmospheric and oceanographic research, climate data visualization using Panoply, Ncview, Ferret, and CDO tools.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="pub-inner">
+    <div class="sec-label">Publications</div>
+    <div class="sec-title">Research Output</div>
+
+    <h3 style="font-size:0.85rem; font-weight:600; letter-spacing:0.5px; color:var(--accent); margin-bottom:16px; text-transform:uppercase;">Journal Articles</h3>
+
+    <div class="pub-item">
+      <div class="pub-year">2026</div>
+      <div class="pub-content">
+        <h4>Bioinspired Underwater Robotics: Advances Across the Materials, Design, Control, and Applications</h4>
+        <div class="authors">Muchhala D., Maurya P.K., <strong>Adarsh Raut</strong>, et al.</div>
+        <div class="journal">Robotics and Autonomous Systems · Elsevier</div>
+      </div>
+    </div>
+
+    <h3 style="font-size:0.85rem; font-weight:600; letter-spacing:0.5px; color:var(--gold); margin-bottom:16px; margin-top:32px; text-transform:uppercase;">Conference Presentations</h3>
+
+    <div class="conf-item">
+      <h4>Impact of Pitching Angle and Frequency on Flapping Foil Hydrodynamics: A CFD Study with Experimental Validation</h4>
+      <p>Adarsh Raut, Maurya P., Muchhala D. · <strong>ICSEE 2025</strong></p>
+      <p style="margin-top:6px;">CFD simulation of oscillating airfoil dynamics · Lift and thrust generation under varying pitching frequencies · Experimental validation with strong CFD correlation</p>
+    </div>
+
+    <div style="margin-top:20px; background:var(--tag-bg); border:1px solid #b8ddd0; border-radius:8px; padding:14px 20px;">
+      <p style="font-size:0.82rem; color:var(--tag-text);">
+        &#128218; Also find my work on 
+        <a href="https://orcid.org/0009-0001-6554-4709" target="_blank" style="color:var(--accent2); font-weight:600;">ORCID · 0009-0001-6554-4709</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sec-label">Projects</div>
+  <div class="sec-title">Key Projects</div>
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="proj-meta">
+        <span class="proj-org">NIO Goa</span>
+        <span class="proj-year">2025</span>
+      </div>
+      <h3>Flapping Foil Hydrodynamics using CFD</h3>
+      <p>Numerical investigation of thrust and lift generation from pitching foils. CFD simulation and comparison with experimental data. Analysis of frequency and pitching-angle effects on hydrodynamic performance.</p>
+      <div class="proj-tags">
+        <span class="tag">CFD</span>
+        <span class="tag">Fluid Dynamics</span>
+        <span class="tag">Experimental Validation</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-meta">
+        <span class="proj-org">IITM Pune</span>
+        <span class="proj-year">2023–24</span>
+      </div>
+      <h3>Arctic Oscillation Influence on Indian Summer Monsoon</h3>
+      <p>M.Tech thesis research investigating teleconnections between Arctic Oscillation patterns and Indian Summer Monsoon Rainfall variability using large-scale climate datasets.</p>
+      <div class="proj-tags">
+        <span class="tag">Monsoon</span>
+        <span class="tag">Teleconnections</span>
+        <span class="tag">Climate Analysis</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-meta">
+        <span class="proj-org">C-DAC Pune</span>
+        <span class="proj-year">2025–Present</span>
+      </div>
+      <h3>Operational WRF-based NWP & Climate Analysis</h3>
+      <p>High-resolution climate analysis using ERA5 and IMD datasets. Extreme rainfall diagnostics and urban climate risk assessment integrating meteorological and socio-economic indicators.</p>
+      <div class="proj-tags">
+        <span class="tag">WRF</span>
+        <span class="tag">ERA5</span>
+        <span class="tag">HPC</span>
+        <span class="tag">Urban Climate</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="proj-meta">
+        <span class="proj-org">SPPU</span>
+        <span class="proj-year">2023</span>
+      </div>
+      <h3>WRF Heat Wave Visualization within Boundary Layer</h3>
+      <p>Processed WRF model output to identify and visualize heat wave propagation patterns over central India, focusing on boundary layer dynamics and thermal structure.</p>
+      <div class="proj-tags">
+        <span class="tag">WRF</span>
+        <span class="tag">Heat Waves</span>
+        <span class="tag">Boundary Layer</span>
+        <span class="tag">Python</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="skills-inner">
+    <div class="sec-label">Skills</div>
+    <div class="sec-title">Tools & Expertise</div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Programming</h3>
+        <div class="skill-list">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">FORTRAN 90/95</span>
+          <span class="skill-pill">MATLAB</span>
+          <span class="skill-pill">R</span>
+          <span class="skill-pill">C</span>
+          <span class="skill-pill">LaTeX</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Climate Tools</h3>
+        <div class="skill-list">
+          <span class="skill-pill">WRF</span>
+          <span class="skill-pill">CDO</span>
+          <span class="skill-pill">NCO</span>
+          <span class="skill-pill">Ferret</span>
+          <span class="skill-pill">Panoply</span>
+          <span class="skill-pill">Ncview</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Visualization</h3>
+        <div class="skill-list">
+          <span class="skill-pill">Matplotlib</span>
+          <span class="skill-pill">Scikit-learn</span>
+          <span class="skill-pill">Origin</span>
+          <span class="skill-pill">GIS</span>
+          <span class="skill-pill">Remote Sensing</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>HPC & Parallel</h3>
+        <div class="skill-list">
+          <span class="skill-pill">Linux</span>
+          <span class="skill-pill">Dask</span>
+          <span class="skill-pill">Parallel NetCDF</span>
+          <span class="skill-pill">MPI</span>
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">Multiprocessing</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>CFD & Modeling</h3>
+        <div class="skill-list">
+          <span class="skill-pill">CFD</span>
+          <span class="skill-pill">Fluid Mechanics</span>
+          <span class="skill-pill">Turbulence</span>
+          <span class="skill-pill">Mesh Generation</span>
+          <span class="skill-pill">Numerical Simulation</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Data & Datasets</h3>
+        <div class="skill-list">
+          <span class="skill-pill">ERA5</span>
+          <span class="skill-pill">IMD Data</span>
+          <span class="skill-pill">NetCDF</span>
+          <span class="skill-pill">MMCSv2</span>
+          <span class="skill-pill">Reanalysis</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sec-label">Experience</div>
+  <div class="sec-title">Professional Journey</div>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="t-header">
+        <h3>Project Engineer</h3>
+        <span class="t-date">Nov 2025–Present</span>
+      </div>
+      <div class="t-org">Centre for Development of Advanced Computing (C-DAC), Pune</div>
+      <p>Operational WRF-based numerical weather prediction and high-resolution climate analysis using ERA5 and IMD datasets. Extreme rainfall diagnostics and urban climate risk assessment.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="t-header">
+        <h3>Project Associate-I</h3>
+        <span class="t-date">May–Sept 2025</span>
+      </div>
+      <div class="t-org">Indian Institute of Tropical Meteorology (IITM), Pune</div>
+      <p>Monsoon rainfall drivers and connections, MMCSv2 model data for seasonal prediction, large climate data handling and analysis.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="t-header">
+        <h3>Project Associate-I</h3>
+        <span class="t-date">Aug 2024–May 2025</span>
+      </div>
+      <div class="t-org">National Institute of Oceanography (NIO), Goa</div>
+      <p>CFD hydrodynamic investigations of oscillating/flapping foil propulsion systems. Numerical and experimental studies of foil hydrodynamics and bio-inspired marine propulsion.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="t-header">
+        <h3>Graduate Research Assistant</h3>
+        <span class="t-date">2023–2024</span>
+      </div>
+      <div class="t-org">IITM Pune · M.Tech Thesis</div>
+      <p>Thesis: Arctic Oscillation Influence on Indian Summer Monsoon Rainfall. Conducted large-scale atmospheric data analysis and climate teleconnection research.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="t-header">
+        <h3>Drafting Engineer</h3>
+        <span class="t-date">2021–2022</span>
+      </div>
+      <div class="t-org">Kakade Laser, Pune</div>
+      <p>CFD and CAD modeling for industrial applications.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div>
+      <div class="sec-label">Contact</div>
+      <div class="sec-title">Get In Touch</div>
+      <p class="contact-desc">Open to research collaborations, academic discussions, and opportunities in atmospheric science, climate modeling, and HPC applications.</p>
+      <div class="contact-links">
+        <a href="mailto:adarshraut94@gmail.com" class="contact-link">
+          <div class="c-icon">✉</div>
+          adarshraut94@gmail.com
+        </a>
+        <a href="https://github.com/adarshclimate" target="_blank" class="contact-link">
+          <div class="c-icon">⌥</div>
+          github.com/adarshclimate
+        </a>
+        <a href="https://orcid.org/0009-0001-6554-4709" target="_blank" class="contact-link">
+          <div class="c-icon">◎</div>
+          ORCID: 0009-0001-6554-4709
+        </a>
+        <a href="https://www.linkedin.com/in/mr-adarsh-raut-b6766926b" target="_blank" class="contact-link">
+          <div class="c-icon">in</div>
+          LinkedIn Profile
+        </a>
+      </div>
+    </div>
+    <div class="cv-box">
+      <h3>Download CV</h3>
+      <p>Full academic and professional curriculum vitae including publications, projects, and certifications.</p>
+      <a href="https://adarshclimate.github.io" target="_blank" class="btn-white">⬇ View Full CV</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Adarsh Dattarao Raut · Atmospheric & Climate Scientist · Pune, India
+</footer>
+
+</body>
+</html>
